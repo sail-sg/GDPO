@@ -1,5 +1,5 @@
 # Graph Diffusion Policy Optimization
-![teaser](fig/teaser.png)
+![teaser](https://i0.imgs.ovh/2024/02/07/bEiou.png)
 This paper introduces $\textit{graph diffusion policy optimization}$ (GDPO), a novel approach to optimize graph diffusion models for arbitrary (e.g., non-differentiable) objectives using reinforcement learning. GDPO is based on an $\textit{eager policy gradient}$ tailored for graph diffusion models, developed through meticulous analysis and promising improved performance. Experimental results show that GDPO achieves state-of-the-art performance in various graph generation tasks with complex and diverse objectives.
 ## Installing dependence
 ```
