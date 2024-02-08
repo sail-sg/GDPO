@@ -1,0 +1,4 @@
+name: planar
+remove_h: null
+datadir: 'data/planar/'
+nodes: 4

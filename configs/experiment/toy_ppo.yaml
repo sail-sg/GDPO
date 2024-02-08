@@ -1,0 +1,44 @@
+# @package _global_
+general:
+    name : 'toy'
+    gpus : 1
+    wandb: 'disabled'
+    resume: null
+    test_only: null
+    check_val_every_n_epochs: 1
+    sample_every_val: 1
+    samples_to_generate: 1
+    samples_to_save: 1
+    chains_to_save: 1
+    final_model_samples_to_generate: 1
+    final_model_samples_to_save: 1
+    final_model_chains_to_save: 1
+    vallike: False
+    sampleloop: 4
+    step_freq: 2
+    innerloop: 5
+    partial: False
+    fix: 0.
+    ppo_sr: 1.0
+    val_check_interval: 1
+    val_method: "pass"
+    train_method: "olppox0"
+train:
+    lr: 0.00001
+    n_epochs: 700
+    batch_size: 256
+    weight_decay: 1e-12
+    save_model: True
+
+model:
+    diffusion_steps: 50
+    n_layers: 1
+    lambda_train: [5, 0]
+    extra_features: 'all'
+
+    # Do not set hidden_mlp_E, dim_ffE too high, computing large tensors on the edges is costly
+    # At the moment (03/08), y contains quite little information
+    hidden_mlp_dims: { 'X': 128, 'E': 64, 'y': 128 }
+
+    # The dimensions should satisfy dx % n_head == 0
+    hidden_dims: { 'dx': 256, 'de': 64, 'dy': 64, 'n_head': 8, 'dim_ffX': 256, 'dim_ffE': 64, 'dim_ffy': 256 }

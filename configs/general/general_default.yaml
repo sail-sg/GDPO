@@ -1,0 +1,40 @@
+# General settings
+name: 'graph-digress'      # Warning: 'debug' and 'test' are reserved name that have a special behavior
+
+wandb: 'disabled'             # online | offline | disabled
+gpus: 1                     # Multi-gpu is not implemented on this branch
+device: 0
+seed: 666
+
+resume: null
+test_only: null
+check_val_every_n_epochs: 1
+sample_every_val: 4
+test_method: "orig"
+val_method: "orig"
+train_method: "orig"
+ppo_sr: 0.2
+back_step: 50
+chain_L: 5
+innerloop: 1
+sampleloop: 4
+vallike: False
+minibatchnorm: False
+step_freq: 4
+discrete: False
+partial: False
+fix: 0.75
+thres: 0.9
+target_prop: "parp1"
+val_check_interval: null
+samples_to_generate: 512       # We advise to set it to 2 x batch_size maximum
+samples_to_save: 20
+chains_to_save: 1
+log_every_steps: 50
+number_chain_steps: 30        # Number of frames in each gif
+
+final_model_samples_to_generate: 20000
+final_model_samples_to_save: 30
+final_model_chains_to_save: 20
+
+evaluate_all_checkpoints: False
