@@ -21,7 +21,7 @@ For Planar and SBM, they will be automatically downloaded during training.
 ## Prepare Pretrained Models
 * Planar: [Planar Pretrained](https://drive.google.com/file/d/1jktMazwxjSb6jMEUSSYQmZ5V0JFNQdaS/view?usp=drive_link)
 * SBM: [SBM Pretrained](https://drive.google.com/file/d/1KlJQ4H43q_IEMhvJO22vE1g22X2MjHjk/view?usp=drive_link)
-* ZINC250k: [ZINC250k Pretrained](https://drive.google.com/file/d/1jktMazwxjSb6jMEUSSYQmZ5V0JFNQdaS/view?usp=drive_link)
+* ZINC250k: [ZINC250k Pretrained](https://drive.google.com/file/d/1JGCKzh8KSLPyHk4gZS2TKgm8sdi7JBk4/view?usp=drive_link)
 * MOSES: [MOSES Pretrained](https://drive.google.com/file/d/1eQJPPp_6QirfDisUIU1t4aBoepOWbl2l/view?usp=drive_link)
 
 After downloading the pretrained models, place them in the "./pretrained" folder.
