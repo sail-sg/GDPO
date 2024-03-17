@@ -2,9 +2,9 @@
 This paper introduces $\textit{graph diffusion policy optimization}$ (GDPO), a novel approach to optimize graph diffusion models for arbitrary (e.g., non-differentiable) objectives using reinforcement learning. GDPO is based on an $\textit{eager policy gradient}$ tailored for graph diffusion models, developed through meticulous analysis and promising improved performance. Experimental results show that GDPO achieves state-of-the-art performance in various graph generation tasks with complex and diverse objectives.
 ## Installing dependence
 ```
-conda create --GDPO --file spec-list.txt
+conda create --name GDPO --file spec-list.txt
 conda activate GDPO
-pip install requrements.txt
+pip install -r requrements.txt
 ```
 If there are still issues, please refer to DiGress and add other dependencies as necessary.
 
